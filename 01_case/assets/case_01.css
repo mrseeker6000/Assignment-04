@@ -1,0 +1,46 @@
+section{
+    position: relative;
+}
+div{
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: blueviolet;
+    position: absolute;
+    left: -150px;
+    transition: left;
+    transition-duration: 1s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+div>span{
+    position: absolute;
+    color: white;
+    top: 10px;
+    left: 5px;
+    font-size: 20px;
+}
+div>i{
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    margin: 5px;
+    height: 20px;
+    width: 10px;
+}
+.menu-two{
+    top: 90px;
+}
+.menu-three{
+    top: 180px;
+}
+.menu-four{
+    top: 270px;
+}
+.menu-five{
+    top: 360px;
+}
+div:hover{
+    left: 0;
+}

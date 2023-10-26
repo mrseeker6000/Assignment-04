@@ -1,0 +1,46 @@
+section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+}
+.middle{
+    border-radius: 100%;
+    background-color: darkgray;
+    width: 150px;
+    aspect-ratio: 1/1;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.middle>h3{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.middle::before{
+    content: " ";
+    border: 5px solid white;
+    border-radius: 100%;
+    position: absolute;
+    aspect-ratio: 1/1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-top-color: red;
+}
+.middle:hover::before{
+    transform: rotate(360deg);
+    transition-duration: 2s;
+}
